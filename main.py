@@ -186,6 +186,9 @@ def get_args_parser():
     parser.add_argument('--world_size', default=1, type=int,
                         help='number of distributed processes')
     parser.add_argument('--dist_url', default='env://', help='url used to set up distributed training')
+    parser.add_argument('--log_dir', default='/datasets01/imagenet_full_size/061417/', type=str,
+                        help='dataset path')
+    parser.add_argument('--nb_classes', default=1000, type=int, help='Classes number')
     return parser
 
 
